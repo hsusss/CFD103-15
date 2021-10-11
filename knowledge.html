@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>善茶官方網站 | 茶品知識</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav_bar{
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .guided{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(255, 0, 0, 0.87);
+        }
+
+        .logo{
+            display: flex;
+            margin-left: 20px;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo > a >img{
+            width: 50px;
+            padding-top: 5px;
+        }
+
+        .logo h1{
+            font-family: 標楷體;
+            font-size: 30px;
+        }
+
+        .guided_list{
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            margin-right: 60px;
+        }
+
+        .guided_list a{
+            color: inherit;
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 22px;
+            font-weight: bold;
+            display: block;
+            
+        }
+
+        .guided_list  a:hover{
+            background-color: rgba(0, 0, 0, 0.329);
+        }
+
+        .user{
+            display: flex;
+            margin-right: 20px;
+            gap: 15px;
+        }
+        .user > a > img{
+            width: 35px;
+        }
+
+        .title > h1{
+            font-family: 微軟正黑體;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 120px;
+            letter-spacing: 5px;
+        }
+
+        .title > h2{
+            text-align: center;
+            color: rgb(168, 105, 41);
+            margin-top:60px;
+            font-size: 28px;
+        }
+
+        .title_pic{
+            width: 1200px;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        .title_pic > img{
+            width: 1200px;
+        }
+
+        .step{
+            display: flex;
+            width: 1200px;
+            margin: auto;
+            margin-top: 30px;
+            justify-content:space-around;
+        }
+
+        .step_01{
+            background-color: rgba(169, 169, 169, 0.301);
+            width: 280px;
+            height: 220px;
+            border-radius: 5%;
+            position: relative;
+        }
+
+        .step_02{
+            background-color: rgba(169, 169, 169, 0.301);
+            width: 280px;
+            height: 220px;
+            border-radius: 5%;
+            position: relative;
+        }
+
+        .step_03{
+            background-color: rgba(169, 169, 169, 0.301);
+            width: 280px;
+            height: 220px;
+            border-radius: 5%;
+            position: relative;
+        }
+
+        .step_04{
+            background-color: rgba(169, 169, 169, 0.301);
+            width: 280px;
+            height: 220px;
+            border-radius: 5%;
+            position: relative;
+        }
+
+        .step_01 > p{
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            margin: 20px;
+        }
+
+        .step_02 > p{
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            margin: 20px;
+        }
+
+        .step_03 > p{
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            margin: 20px;
+        }
+
+        .step_04 > p{
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            margin: 20px;
+        }
+
+        .step_01 > img{
+            border-radius: 50%;
+            width: 80px;
+            position:absolute;
+            bottom: -40px;
+        }
+
+        .step_02 > img{
+            border-radius: 50%;
+            width: 80px;
+            position:absolute;
+            bottom: -40px;
+        }
+
+        .step_03 > img{
+            border-radius: 50%;
+            width: 80px;
+            position:absolute;
+            bottom: -40px;
+        }
+
+        .step_04 > img{
+            border-radius: 50%;
+            width: 80px;
+            position:absolute;
+            bottom: -40px;
+        }
+
+        .mark{
+            position:absolute;
+            left: 180px;
+            bottom: -50px;
+        }
+
+        .step02{
+            display: flex;
+            width: 1200px;
+            margin: auto;
+            margin-top: 50px;
+            justify-content:space-around;
+        }
+
+        .step03{
+            display: flex;
+            width: 1200px;
+            margin: auto;
+            margin-top: 50px;
+            gap: 20px;
+            position: relative;
+        }
+
+        .step_05{
+            background-color: rgba(169, 169, 169, 0.301);
+            width: 280px;
+            height: 220px;
+            border-radius: 5%;
+            position: relative;
+            left: 10px;
+        }
+
+        .step_05 > p{
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            margin: 20px;
+        }
+
+        .step_05 > img{
+            border-radius: 50%;
+            width: 80px;
+            position:absolute;
+            bottom: -40px;
+        }
+
+        .step_06{
+            background-color: rgba(169, 169, 169, 0.301);
+            width: 280px;
+            height: 220px;
+            border-radius: 5%;
+            position: relative;
+            left: 10px;
+        }
+
+        .step_06 > p{
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            margin: 20px;
+        }
+
+        .step_06 > img{
+            border-radius: 50%;
+            width: 80px;
+            position:absolute;
+            bottom: -40px;
+        }
+
+        .title02 > h2{
+            text-align: center;
+            color: rgb(168, 105, 41);
+            margin-top:120px;
+            font-size: 28px;
+        }
+
+        .tasting_tea{
+            display: flex;           
+            width: 1200px;
+            margin: auto;
+            margin-top: 60px;
+            gap: 20px;
+        }
+
+        .text > p{
+            font-size: 13px;
+            margin-top: 20px;
+            line-height: 25px;
+        }
+
+        .pic > img{
+            width: 350px;
+            margin-top: 11px;
+        }
+
+        .text_title01{
+            position: relative;
+        }
+
+        .text_title02{
+            position: relative;
+        }
+
+        .text_title03{
+            position: relative;
+        }
+
+        .text_title04{
+            position: relative;
+        }
+
+        .text_title05{
+            position: relative;
+        }
+
+        .text_title01::after{
+            content: "";
+            width: 710px;
+            height: 0px;
+            border: 0.5px solid rgb(189, 184, 184);
+            background-color: rgb(192, 181, 181);
+            position: absolute;
+            top: 12px;
+            right: 10px;
+        }
+
+        .text_title02::after{
+            content: "";
+            width: 710px;
+            height: 0px;
+            border: 0.5px solid rgb(189, 184, 184);
+            background-color: rgb(192, 181, 181);
+            position: absolute;
+            top: 12px;
+            right: 10px;
+        }
+
+        .text_title03::after{
+            content: "";
+            width: 690px;
+            height: 0px;
+            border: 0.5px solid rgb(189, 184, 184);
+            background-color: rgb(192, 181, 181);
+            position: absolute;
+            top: 12px;
+            right: 10px;
+        }
+
+        .text_title04::after{
+            content: "";
+            width: 670px;
+            height: 0px;
+            border: 0.5px solid rgb(189, 184, 184);
+            background-color: rgb(192, 181, 181);
+            position: absolute;
+            top: 12px;
+            right: 10px;
+        }
+
+        .text_title05::after{
+            content: "";
+            width: 650px;
+            height: 0px;
+            border: 0.5px solid rgb(189, 184, 184);
+            background-color: rgb(192, 181, 181);
+            position: absolute;
+            top: 12px;
+            right: 10px;
+        }
+
+        .footer{
+            display: flex;
+            background-image: url(背景圖01.jpg);
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        .footer_logo{
+            width: 25%;
+            text-align: center;
+        }
+
+        .footer_logo > img{
+            width: 70px;
+            margin-top: 13%;
+            padding-left: 50%;
+        }
+
+        .footer_logo > p{
+            font-size: 22px;
+            font-family: 標楷體;
+            font-weight: bold;
+            padding: 5px;
+            padding-left: 50%;
+        }
+        
+        .footer_items{
+            padding-left: 6.5%;
+        }
+
+        .footer_list {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            margin-top: 6%;
+        }
+
+        .footer_list a {
+            color: inherit;
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 20px;
+            display: block;
+        }
+
+        .address{
+            color: whitesmoke;
+            font-size: 20px;
+            margin-top: 3%;
+        }
+
+        .note{
+            color: whitesmoke;
+            font-size: 12px;
+            margin-top: 5%;
+            margin-bottom: 4%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav_bar">
+        <ul class="guided">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/CFD103-15/home.html"><img src="善茶LOGO.png" alt="logo"></a>
+                <h1>善茶</h1>
+            </div>
+            <div class="guided_list">
+                <li><a href="http://127.0.0.1:5500/CFD103-15/about%20us.html">關於我們</a></li>
+                <li><a href="http://127.0.0.1:5500/CFD103-15/product.html">產品介紹</a></li>
+                <li><a href="http://127.0.0.1:5500/CFD103-15/knowledge.html">茶品知識</a></li>
+                <li><a href="http://127.0.0.1:5500/CFD103-15/news.html">最新消息</a></li>
+                <li><a href="http://127.0.0.1:5500/CFD103-15/address.html">門市據點</a></li>
+            </div>
+            <div class="user">
+                <a href="http://127.0.0.1:5500/CFD103-15/home.html"><img src="user.png" alt="user"></a>
+                <a href="http://127.0.0.1:5500/CFD103-15/home.html"><img src="shopping-car.png" alt="shopping-car"></a>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="title">
+        <h1>善茶 x 茶品知識</h1>
+        <h2>製茶流程</h2>
+    </div>
+
+    <div class="title_pic">
+        <img src="製茶流程.jpg" alt="製茶流程">
+    </div>
+
+    <div class="step">
+        <div class="step_01">
+            <p>一天之中，採茶的時間以中午十二點到下午三點的早菁較佳，此時露水已失，採摘後在製茶流程的萎凋階段仍可曬到太陽。</p>
+            <p class="mark">step 1</p>
+            <img src="採茶.jpg" alt="採茶">
+        </div>
+        <div class="step_02">
+            <p>做一道好菜，需要廚師好，更重要的是材料好；製好茶也是，有好師傅，也要有好茶菁！</p>
+            <p class="mark">step 2</p>
+            <img src="茶菁.jpg" alt="茶菁">
+        </div>
+        <div class="step_03">
+            <p>「萎凋」的目的是為了幫助鮮葉的水分適度蒸發，減少細胞內水份的含量，以利空氣中的氧和葉細胞產生氧化作用，使鮮葉的青草氣消退而產生清香。</p>
+            <p class="mark">step 3</p>
+            <img src="日光萎凋.jpg" alt="日光萎凋">
+        </div>
+        <div class="step_04">
+            <p>日光萎凋後，細胞膜的半透性已遭破壞，於是葉內開始產生化學變化，接著將葉片移至陰涼通風處靜置攤涼，散發葉片的熱量，並使莖梗中的水分向葉片擴散。</p>
+            <p class="mark">step 4</p>
+            <img src="室內萎凋.jpg" alt="室內萎凋">
+            
+        </div>
+    </div>
+
+
+    <div class="step02">
+        <div class="step_01">
+            <p>攪拌是用雙手執茶，微力翻攪，使鮮葉因相互摩擦而破壞葉緣細胞，讓空氣易於進入葉肉細胞內，以促進醱酵。攪拌的動作也有助於茶葉「走水」的平均。</p>
+            <p class="mark">step 5</p>
+            <img src="萎凋攪拌.jpg" alt="萎凋攪拌">
+        </div>
+        <div class="step_02">
+            <p>利用160～180℃的高溫，來停止茶菁的發酵作用，在香氣初露的當下立馬下手炒菁。烏龍茶的特有香氣、滋味與水色即刻成形。</p>
+            <p class="mark">step 6</p>
+            <img src="炒菁.jpg" alt="炒菁">
+        </div>
+        <div class="step_03">
+            <p>揉搓茶葉的壓力會導致葉片內汁液滲出，附著於葉片上，使得沖泡茶葉時茶液能很快溶解於熱水中，成為一杯滋味香醇的茶湯。</p>
+            <p class="mark">step 7</p>
+            <img src="揉捻.jpg" alt="揉捻">
+        </div>
+        <div class="step_04">
+            <p>將揉捻完成的茶葉解塊翻動後，進入茶菁的初乾程序，使整體水份降低至30~35%，摸起來柔軟有彈性、不粘手為止。這是茶葉第一次的乾燥，茶菁的風味概已定型。</p>
+            <p class="mark">step 8</p>
+            <img src="初乾.jpg" alt="初乾">
+            
+        </div>
+    </div>
+
+
+    <div class="step03">
+        <div class="step_05">
+            <p>半球型茶於揉捻後增加團揉，以布巾包裹茶葉成球團狀，再以手工或機器來回搓壓；過程中須不時將布巾攤開，打散茶葉散熱；重複次數越多茶葉越結實。</p>
+            <p class="mark">step 9</p>
+            <img src="團揉.jpg" alt="團揉">
+        </div>
+        <div class="step_06">
+            <p>焙茶即用溫火烘茶。焙茶是為了再次清除茶葉中的水分，以便更好地保藏貯存。並且火候將決定茶葉的風味與口感，是製茶的最後一道程序。</p>
+            <p class="mark">step 10</p>
+            <img src="復焙.jpg" alt="復焙">
+        </div>
+        
+    </div>
+
+    <div class="title02">
+        <h2>品茶之道</h2>
+    </div>
+
+    <div class="tasting_tea">
+        <div class="text">
+            <h3 class="text_title01">第一步 察顏</h3>
+            <p style="color: rgb(255, 133, 92);  font-size: 16px;">觀察茶乾的外觀!</p>
+            <p>最基本的要求必須乾燥完全、不能有太多茶角、茶梗、黃片及其它雜物。力求顏色與顆粒大小均勻，顆粒的大小沒有絕對，不一定越大越好。顏色以墨綠色帶有新鮮光澤為上等。而茶葉的條索型態（球型/半球型/條型），則隨著做法而異。</p>
+        </div>
+        <div class="pic">
+            <img src="察顏.jpg" alt="察顏">
+        </div>
+    </div>
+
+    <div class="tasting_tea">
+        <div class="text">
+            <h3 class="text_title02">第二步 觀色</h3>
+            <p style="color: rgb(255, 133, 92); font-size: 16px;">辨識茶湯的顏色，是選好茶的重要步驟！</p>
+            <p>不論是哪種烘焙程度的茶葉，茶湯都是以清澈透明、帶光澤，杯面泛有油光，久放後顏色不會有太大變化為上品。 製程好的茶葉浸泡的越久只會影響到茶湯的濃度，而不會變得苦澀或使茶湯顏色變紅。久浸之後水色會變深偏紅，是因為茶葉在製程中不完善，而導致茶葉一經熱水沖泡後還在產生化學變化所致。</p>
+        </div>
+        <div class="pic">
+            <img src="觀色.jpg" alt="觀色">
+        </div>
+    </div>
+    
+    <div class="tasting_tea">
+        <div class="text">
+            <h3 class="text_title03">第三步 動手摸</h3>
+            <p>茶葉鑒賞中，評定葉底(茶渣)是不可少的步驟。評定葉底一是靠嗅覺辨別香氣是否依然清香、自然，二是要動手摸摸看，好的茶渣應該要摸起來有彈性，經過多次沖泡、浸泡依然精神飽滿，老嫩程度和葉片大小必須均勻整齊、色澤度新鮮，葉片需完整釋放開來（沖泡開後葉片依然捲曲，代表在製作的過程中「走水」不順利）。</p>
+            <p>浸泡後的茶葉葉底，能真實反映茶菁的「本來面目」，通過分析葉底狀況，不但能判斷出茶菁(鮮葉)的生長發育情況如：是否生長旺盛、是否有病蟲危害、採摘特點等，更能判斷製茶技術的優劣。</p>
+        </div>
+        <div class="pic">
+            <img src="動手摸.jpg" alt="動手摸">
+        </div>
+    </div>
+
+    <div class="tasting_tea">
+        <div class="text">
+            <h3 class="text_title04">第四步 品嚐茶湯</h3>
+            <p style="color: rgb(255, 133, 92); font-size: 16px;">三個口成一個「品」！稱作品茶，自然得分為三口。</p>
+            <p>記得，接過茶後別豪氣的舉杯一飲而盡，必須先淺淺的抿一口，讓空氣與茶湯在口腔中混和，再緩緩咽下，讓茶水通過舌頭，擴展到舌苔，直接刺激味蕾，讓茶香慢慢的傳遞整個口腔鼻腔。通過第一口的淺嘗，口腔中已經充滿了茶香。此時，你可以深吸一下茶香，再輕輕送上一口，這是為了能更深切的感受茶葉的味道！</p>
+
+            <p>第三口，你可以慢慢的啜飲茶湯了，現在茶香已經充滿了你的全身細胞，口腔中的味覺也因為前面的刺激而更敏感了。有經驗的茶客們，一般三口就能對茶葉驗明正身！</p>
+        </div>
+        <div class="pic">
+            <img src="品嘗茶湯.jpg" alt="品嘗茶湯">
+        </div>
+    </div>
+
+    <div class="tasting_tea">
+        <div class="text">
+            <h3 class="text_title05">第五步 描述與記憶</h3>
+            <p>就像孩子試著學會用語言表達般，多練習描述您品嚐的茶葉味道，有助於您在喝下每口茶湯時，能快速的從記憶資料庫中應對該氣味合適的位子，能更快速的篩選適合您的氣味。</p>
+        </div>
+        <div class="pic">
+            <img src="描述與記憶.jpg" alt="描述與記憶">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_logo">
+            <img src="善茶LOGO.png" alt="LOGO">
+            <p>善茶</p>
+        </div>
+
+        <div class="footer_items">
+            <div class="footer_list">
+                <li><a href="http://127.0.0.1:5500/CFD103-15/about%20us.html">關於我們</a></li>
+                <li><a href="http://127.0.0.1:5500/CFD103-15/product.html">產品介紹</a></li>
+                <li><a href="http://127.0.0.1:5500/CFD103-15/knowledge.html">茶品知識</a></li>
+                <li><a href="http://127.0.0.1:5500/CFD103-15/news.html">最新消息</a></li>
+                <li><a href="http://127.0.0.1:5500/CFD103-15/address.html">門市據點</a></li>
+            </div>
+            <div class="address">
+                <p>地址 : 桃園市中壢區環中東路二段525巷10號</p>
+            </div>
+            <div class="note">
+                <p>本網站為緯育TibaMe前端設計工程師班第70期學員專題作品，本平台僅供學習、展示之用。<br>若有侵權疑慮，您可私訊TibaMe-前端設計工程師 養成班，後續會由專人協助處理。</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
