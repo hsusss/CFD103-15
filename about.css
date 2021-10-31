@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.title > h1{
+    font-family: 微軟正黑體;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 120px;
+    letter-spacing: 5px;
+}
+
+.title > h3{
+    text-align: center;
+    color: rgb(168, 105, 41);
+    margin-top: 5px;
+}
+
+.title_pic{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.title_pic > img{
+    max-width: 740px;
+}
+
+.text_about > h3{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.text_about > p{
+    width: 470px;
+    margin: auto;
+    margin-top: 30px;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+.storefront_photo{
+    display:flex;
+    justify-content: center;
+    margin-top: 80px;
+    
+}
+
+.storefrontphoto_01 > img{
+    width: 500px;
+    height: 380px;
+}
+
+.storefrontphoto_02{
+    flex-direction: column;
+    display:inline-flex;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.storefrontphoto_02 > img{
+    width: 220px;
+    height: 185px;
+}
+
+.text{
+    width: 470px;
+    margin: auto;
+    margin-top: 70px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.expert{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 10px;
+}
+
+.expert > img{
+    width: 360px;
+    height: 300px;
+    
+}
+
+.tea{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 10px;
+}
+
+.tea > img{
+    width: 360px;
+    height: 300px;
+}
+
+@media screen and (max-width:768px){
+    
+    .title_pic{
+        width: 80%;
+        margin: auto;
+        padding: 40px 0;
+    }
+
+    .title_pic > img{
+        width: 80%;
+    }
+
+    .text_about{
+        width: 80%;
+        margin: auto;
+       
+    }
+
+    .text_about > h3{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .text_about > p{
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+        line-height: 30px;
+        letter-spacing: 3px;
+    }
+
+    .storefront_photo{
+        display:flex;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .storefrontphoto_01{
+        width: 66.666666%;
+        margin-top: 50px;
+    }
+
+    .storefrontphoto_01 > img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .storefrontphoto_02{
+        flex-direction: column;
+        display:inline-flex;
+        margin-left: 10px;
+        margin-top: 50px;
+        width: calc(33.333333% - 10px);
+    }
+    
+    .storefrontphoto_02 > img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+    
+    .text{
+        width: 80%;
+        margin: auto;
+        padding: 0 0 0 5px;
+        margin-top: 50px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        
+    }
+
+    .expert{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .expert > img{
+        width: 48%;
+        margin-top: 50px;
+        height: auto;
+        padding: 0 5px;
+        object-fit: cover;
+    }
+    
+    .tea{
+        display: flex;
+        margin-top: 70px;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .tea > img{
+        width: 48%;
+        margin-top: 50px;
+        height: 45%;
+        padding: 0 5px;
+    }
+
+}
+
+
+@media screen and (max-width:450px){
+
+    .text_about > h3{
+        font-size: 22px;
+        margin-top: 0;
+    }
+
+    .title_pic{
+        width: 90%;
+        margin: auto;
+    }
+
+    .title_pic > img{
+        width: 90%;
+    }
+
+    .storefront_photo{
+        display:flex;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .storefrontphoto_01{
+        width: 66.666666%;
+        margin-top: 50px;
+    }
+
+    .storefrontphoto_01 > img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .storefrontphoto_02{
+        flex-direction: column;
+        display:inline-flex;
+        margin-left: 10px;
+        margin-top: 50px;
+        width: calc(33.333333% - 10px);
+    }
+    
+    .storefrontphoto_02 > img{
+        width: 100%;
+        height: 46%;
+        object-fit: cover;
+        padding-bottom: 10px;
+    }
+
+
+    .expert{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        
+    }
+    
+    .expert > img{
+        width: 48%;
+        margin-top: 50px;
+        height: 22vh;
+        padding: 0 5px;
+        object-fit: cover;
+    }
+
+}

@@ -5,244 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>善茶官方網站 | 聯絡我們</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-
-        body{
-            background-color: rgba(192, 192, 192, 0.295);
-        }
-
-        .nav_bar{
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .guided{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: rgba(255, 0, 0, 0.87);
-        }
-
-        .logo{
-            display: flex;
-            margin-left: 20px;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo > a >img{
-            width: 50px;
-            padding-top: 5px;
-        }
-
-        .logo h1{
-            font-family: 標楷體;
-            font-size: 30px;
-        }
-
-        .guided_list{
-            display: flex;
-            list-style: none;
-            gap: 40px;
-            margin-right: 60px;
-        }
-
-        .guided_list a{
-            color: inherit;
-            text-decoration: none;
-            color: whitesmoke;
-            font-size: 22px;
-            font-weight: bold;
-            display: block;
-            
-        }
-
-        .guided_list  a:hover{
-            background-color: rgba(0, 0, 0, 0.329);
-        }
-
-        .user{
-            display: flex;
-            margin-right: 20px;
-            gap: 15px;
-        }
-        .user > a > img{
-            width: 35px;
-        }
-
-        .storefront{
-            display: flex;
-            width: 1000px;
-            background-color: white;
-            height: 600px;
-            margin: auto;
-            margin-top: 30px;
-        }
-
-        .storefront_pic > img{
-            width: 500px;
-            height: 420px;
-            margin: 90px;
-            margin-left: 60px;
-        }
-
-        .contact_method{
-            margin: auto;
-            margin-left: -40px;
-            
-        }
-
-        .contact_method > li{
-            list-style: none;
-            margin-top: 20px;
-            
-        }
-
-        .information{
-            margin-left: 10px;
-        }
-
-        .time{
-            margin-left: 87px;
-        }
-
-        .storefront_pic02{
-            display: flex;
-            width: 1000px;
-            margin: auto;
-            margin-top: 50px;
-            justify-content: space-between;
-        }
-
-        .storefront_pic02 > img{
-            width: 325px;
-            height: 250px;
-        }
-
-        .container{
-            text-align: center;
-            margin-top: 70px;
-        }
-
-        .section__title{
-            margin-bottom: 40px;
-            position: relative;
-        }
-
-        .line::after{
-            content: "";
-            width: 60px;
-            height: 0px;
-            border: 0.5px solid rgb(8, 4, 4);
-            background-color: rgb(7, 4, 4);
-            position: absolute;
-            left: 48%
-        }
-
-        .container > iframe{
-            width: 1000px;
-            height: 400px;
-        }
-
-        .storefront02{
-            display: flex;
-            width: 1000px;
-            background-color: white;
-            height: 600px;
-            margin: auto;
-            margin-top: 100px;
-        }
-
-        .footer{
-            display: flex;
-            background-image: url(背景圖01.JPG);
-            margin-top: 100px;
-            width: 100%;
-            position: relative;
-        }
-
-        .footer_logo{
-            width: 25%;
-            text-align: center;
-        }
-
-        .footer_logo > a > img{
-            width: 70px;
-            margin-top: 13%;
-            padding-left: 50%;
-        }
-
-        .footer_logo > p{
-            font-size: 22px;
-            font-family: 標楷體;
-            font-weight: bold;
-            padding: 5px;
-            padding-left: 50%;
-        }
-        
-        .footer_items{
-            padding-left: 6.5%;
-        }
-
-        .footer_list {
-            display: flex;
-            list-style: none;
-            gap: 40px;
-            margin-top: 6%;
-        }
-
-        .footer_list a {
-            color: inherit;
-            text-decoration: none;
-            color: whitesmoke;
-            font-size: 20px;
-            display: block;
-        }
-
-        .address{
-            color: whitesmoke;
-            font-size: 20px;
-            margin-top: 3%;
-        }
-
-        .note{
-            color: whitesmoke;
-            font-size: 12px;
-            margin-top: 5%;
-            margin-bottom: 4%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="address.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
     
-    <nav class="nav_bar">
-        <ul class="guided">
-            <div class="logo">
-                <a href="./home.html"><img src="善茶LOGO.png" alt="logo"></a>
-                <h1>善茶</h1>
-            </div>
-            <div class="guided_list">
-                <li><a href="./about us.html">關於我們</a></li>
-                <li><a href="./product.html">產品介紹</a></li>
-                <li><a href="./knowledge.html">茶品知識</a></li>
-                <li><a href="./news.html">最新消息</a></li>
-                <li><a href="./address.html">門市據點</a></li>
-            </div>
-            <div class="user">
-                <a href="./home.html"><img src="user.png" alt="user"></a>
-                <a href="./home.html"><img src="shopping-car.png" alt="shopping-car"></a>
-            </div>
-        </ul>
+    <input type="checkbox" name="" id="menu-control">
+
+    <nav class="main-header">
+        <div class="logo">
+            <a href="./index.html"><img src="LOGO.png" alt="logo"></a>
+            <h1>善茶</h1>
+        </div>
+
+        <label for="menu-control" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>menu</p>
+        </label>
+
+        <div class="guided_list">
+            <a href="./about us.html">關於我們</a>
+            <a href="./product.html">產品介紹</a>
+            <a href="./knowledge.html">茶品知識</a>
+            <a href="./news.html">最新消息</a>
+            <a href="./address.html">門市據點</a>
+        </div>
+
+        <div class="user">
+            <a href="./index.html"><img src="user.png" alt="user"></a>
+            <a href="./index.html"><img src="shopping-car.png" alt="shopping-car"></a>
+        </div>
     </nav>
-        
 
     <div class="storefront">
-        <div class="storefront_pic"><img src="店鋪照.jfif" alt="店鋪照"></div>
+        <div class="storefront_pic"><img src="storefront_0001.jpg" alt="店鋪照">
+        </div>
         <ul class="contact_method">
             <h2>桃園中壢總店</h2>
             <li>聯絡電話 : <span class="information">03-6666-9999</span></li>
@@ -252,23 +51,23 @@
     </div>
 
     <div class="storefront_pic02">
-        <img src="店面照01.jpg" alt="店面照">
-        <img src="店面照02.jpg" alt="店面照">
-        <img src="店面照03.jpg" alt="店面照">
+        <img src="storefront_01.jpg" alt="店面照">
+        <img src="storefront_02.jpg" alt="店面照">
+        <img src="storefront_03.jpg" alt="店面照">
     </div>
 
     <section class="container">
         <h2 class="section__title">地圖<div class="line"></div></h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.615472797385!2d121.22874601484003!3d24.94516618401394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346822452bbc387b%3A0x6ecce371ff7af3a!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A55Kw5Lit5p2x6Lev5LqM5q61NTI16Jmf!5e0!3m2!1szh-TW!2stw!4v1633945048943!5m2!1szh-TW!2stw"
-          height="400" frameborder="0" style="border:0;" aria-hidden="false" tabindex="0"></iframe>
+          height="400" frameborder="0" style="border:0;" aria-hidden="false" tabindex="0" width="90%"></iframe>
       </section>
     </section>
 
 
 
     <div class="storefront02">
-        <div class="storefront_pic"><img src="店鋪照02.jpg" alt="店鋪照"></div>
+        <div class="storefront_pic"><img src="storefront_002.jpg" alt="店鋪照"></div>
         <ul class="contact_method">
             <h2>桃園富岡分店</h2>
             <li>聯絡電話 : <span class="information">03-6666-9999</span></li>
@@ -278,9 +77,9 @@
     </div>
 
     <div class="storefront_pic02">
-        <img src="分店店面照01.jpg" alt="店面照">
-        <img src="分店店面照02.jpg" alt="店面照">
-        <img src="分店店面照03.jpg" alt="店面照">
+        <img src="storefront_04.jpg" alt="店面照">
+        <img src="storefront_05.jpg" alt="店面照">
+        <img src="storefront_06.jpg" alt="店面照">
     </div>
 
     <section class="container">
@@ -294,7 +93,7 @@
 
     <div class="footer">
         <div class="footer_logo">
-            <a href="./home.html"><img src="善茶LOGO.png" alt="LOGO"></a>
+            <a href="./index.html"><img src="LOGO.png" alt="LOGO"></a>
             <p>善茶</p>
         </div>
 

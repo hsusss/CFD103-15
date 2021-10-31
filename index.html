@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>善茶官方網站 | 首頁</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+
+    <input type="checkbox" name="" id="menu-control">
+
+    <nav class="main-header">
+        <div class="logo">
+            <a href="./index.html"><img src="LOGO.png" alt="logo"></a>
+            <h1>善茶</h1>
+        </div>
+
+        <label for="menu-control" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>menu</p>
+        </label>
+
+        <div class="guided_list">
+            <a href="./about us.html">關於我們</a>
+            <a href="./product.html">產品介紹</a>
+            <a href="./knowledge.html">茶品知識</a>
+            <a href="./news.html">最新消息</a>
+            <a href="./address.html">門市據點</a>
+        </div>
+
+        <div class="user">
+            <a href="./index.html"><img src="user.png" alt="user"></a>
+            <a href="./index.html"><img src="shopping-car.png" alt="shopping-car"></a>
+        </div>
+    </nav>
+
+    <div class="background-img">
+        <img src="tea_1280.jpg" alt="首頁圖">
+        <p>以德傳人，以茶會友</p>
+    </div>
+
+    <div class="introduce">
+        <img src="index_bg_01.png" alt="首頁背景圖" class="index_bg01">
+        <div class="text">
+            <h1>以德傳人，以茶會友</h1>
+
+            <p>茶，是人與人之間的溝通橋樑<br>
+            也讓來自世界各地的朋友彼此心意相通
+            </p>
+            <p>善茶一直以來堅持守護臺灣寶島的風土<br>
+            演譯時代傳承的各式科學工法<br>
+            萃出精粹的茶品
+            </p>
+            <p>透過茶<br>
+            我們用簡單的方式訴說真摯的心意</p>
+            <p>讓每一位熱愛茶文的朋友<br>
+            能恣意悠游在品味之間</p>
+            <p>將人生美好的簡單幸福<br>
+            分享給你我身邊的私藏好友</p>
+        </div>
+           <img src="index_bg_02.png" alt="首頁背景圖" class="index_bg02">
+    </div>
+
+    <div class="about_title">
+        <h1>關於善茶</h1>
+        <img src="title_bp.png" alt="標題底圖">
+    </div>
+
+    <div class="about_us">
+        <div class="know">
+            <a href="./about us.html" class="aboutus_pic">
+                <img src="about_us.jpg" alt="認識我們">
+            </a>  
+            <p>認識我們</p>
+        </div>
+        
+        <div class="product_introduce">
+            <a href="./product.html" class="aboutus_pic">
+                <img src="product.jpg" alt="產品介紹">
+            </a>
+            <p>產品介紹</p>
+        </div>
+        
+        <div class="connect">
+            <a href="./address.html" class="aboutus_pic">
+                <img src="address.jpeg" alt="聯繫我們">
+            </a>
+            <p>聯繫我們</p>
+        </div>
+    </div>
+    
+    <div class="products_title">
+        <h1>熱銷商品</h1>
+        <img src="title_bp.png" alt="標題底圖">
+    </div>
+
+    
+    <div class="group">
+        <input type="button" id="btnLeft" value=" < "  disabled>
+        <div class="viewPanel">
+            <div class="wrap">
+                <div class="item">
+                    <img src="tea_02.jpg">
+                    <p>四季安尚烏龍</p>
+                </div>
+                <div class="item">
+                    <img src="tea_03.jpg">
+                    <p>凍頂烏龍</p>
+                </div>
+                <div class="item">
+                    <img src="tea_10.jpg">
+                    <p>金萱鐵觀音</p>
+                </div>
+                <div class="item">
+                    <img src="tea_07.jpg">
+                    <p>文山包種</p>
+                </div>
+                <div class="item">
+                    <img src="tea_05.jpg">
+                    <p>蜜香紅茶</p>
+                </div>
+                <div class="item">
+                    <img src="tea_11.jpg">
+                    <p>佛手鐵觀音</p>
+                </div>        
+                <div class="item">
+                    <img src="tea_12.jpg">
+                    <p>正欉鐵觀音</p>
+                </div>
+                <div class="item">
+                    <img src="tea_14.jpg">
+                    <p>紫芽春蕊</p>
+                </div>
+                <div class="item">
+                    <img src="tea_15.jpg">
+                    <p>臨滄春蕊</p>
+                </div>
+            </div>
+        </div>
+        <input type="button" id="btnRight" value=" > " >
+    </div>
+   
+        
+        
+    </div>
+    <script type="text/javascript">
+    let curIndex = 0;
+    
+    window.addEventListener("load", function(){
+       
+        document.getElementById("btnRight").onclick = function(){
+            curIndex++;
+            let wrap = document.querySelector(".wrap");
+            wrap.style.left = -220 * curIndex + "px";
+            if(curIndex == 5){
+                document.getElementById("btnRight").disabled = true; 
+            }
+            document.getElementById("btnLeft").disabled = false; 
+        }
+        
+        document.getElementById("btnLeft").onclick = function(){
+            curIndex--;
+            let wrap = document.querySelector(".wrap");
+            wrap.style.left = -220 * curIndex + "px";
+            if(curIndex == 0){
+                document.getElementById("btnLeft").disabled = true; 
+            }
+            document.getElementById("btnRight").disabled = false;
+        }
+    }, false);
+
+
+    </script>    
+
+
+    <div class="footer">
+        <div class="footer_logo">
+            <a href="./index.html"><img src="LOGO.png" alt="LOGO"></a>
+            <p>善茶</p>
+        </div>
+
+        <div class="footer_items">
+            <div class="footer_list">
+                <a href="./about us.html">關於我們</a>
+                <a href="./product.html">產品介紹</a>
+                <a href="./knowledge.html">茶品知識</a>
+                <a href="./news.html">最新消息</a>
+                <a href="./address.html">門市據點</a>
+            </div>
+            <div class="address">
+                <p>地址 : 桃園市中壢區環中東路二段525巷10號</p>
+            </div>
+            <div class="note">
+                <p>本網站為緯育TibaMe前端設計工程師班第70期學員專題作品，本平台僅供學習、展示之用。<br>若有侵權疑慮，您可私訊TibaMe-前端設計工程師 養成班，後續會由專人協助處理。</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
