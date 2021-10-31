@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(192, 192, 192, 0.295);
+}
+
+
+
+.storefront{
+    display: flex;
+    width: 1000px;
+    background-color: white;
+    height: 600px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.storefront_pic > img{
+    width: 500px;
+    height: 420px;
+    margin: 90px;
+    margin-left: 60px;
+}
+
+.contact_method{
+    margin: auto;
+    margin-left: -40px;
+    
+}
+
+.contact_method > li{
+    list-style: none;
+    margin-top: 20px;
+    
+}
+
+.information{
+    margin-left: 10px;
+}
+
+.time{
+    margin-left: 87px;
+}
+
+.storefront_pic02{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.storefront_pic02 > img{
+    width: 325px;
+    height: 250px;
+}
+
+.container{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.section__title{
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.line::after{
+    content: "";
+    width: 60px;
+    height: 0px;
+    border: 0.5px solid rgb(8, 4, 4);
+    background-color: rgb(7, 4, 4);
+    position: absolute;
+    left: 48%
+}
+
+.container > iframe{
+    width: 1000px;
+    height: 400px;
+}
+
+.storefront02{
+    display: flex;
+    width: 1000px;
+    background-color: white;
+    height: 600px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+@media screen and (max-width:768px) {
+    
+    .storefront{
+        display: flex;
+        width: 90%;
+        background-color: white;
+        height: 50vh;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .storefront_pic > img{
+        width: 70%;
+        height: 65%;
+        margin-top: 15%;
+        margin-left: 5%;
+        object-fit: cover;
+    }
+    
+    .contact_method{
+        margin: auto;
+        margin-left: -80px;
+        
+    }
+    
+    .contact_method > li{
+        list-style: none;
+        margin-top: 20px;
+        
+    }
+    
+    .information{
+        margin-left: 10px;
+    }
+    
+    .time{
+        margin-left: 87px;
+    }
+    
+    .storefront_pic02{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        justify-content: space-between;
+        
+    }
+    
+    .storefront_pic02 > img{
+        width: 32.466666%;
+        height: 25vh;
+        object-fit:cover;
+    }
+    
+    .container{
+        width: 90%;
+        margin: auto;
+        margin-top: 70px;
+
+    }
+    
+    .section__title{
+        margin-bottom: 40px;
+        position: relative;
+    }
+    
+    .line::after{
+        content: "";
+        width: 60px;
+        height: 0px;
+        border: 0.5px solid rgb(8, 4, 4);
+        background-color: rgb(7, 4, 4);
+        position: absolute;
+        left: 45.5%
+    }
+    
+    .container > iframe{
+        width: 90%;
+        height: 40vh;
+    }
+    
+    .storefront02{
+        display: flex;
+        width: 90%;
+        background-color: white;
+        height: 50vh;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+}
+
+
+@media screen and (max-width:450px){
+
+    .storefront{
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        background-color: white;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .storefront_pic > img{
+        width: 80%;
+        height: 50%;
+        margin: 10%;
+        object-fit: cover;
+    }
+    
+    .contact_method{
+        width: 80%;
+        height: 100%;
+        margin-left: auto;
+        margin-bottom: 10%;
+    }
+    
+    .contact_method h2{
+        font-size: 18px;
+    }
+
+    .contact_method > li{
+        list-style: none;
+        margin-top: 20px;
+        font-size: 12px;
+       
+    }
+    
+    .information{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    
+    .time{
+        margin-left: 25%;
+    }
+    
+    .storefront_pic02{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        justify-content: space-between;
+        
+    }
+    
+    .storefront_pic02 > img{
+        width: 32.466666%;
+        height: 15vh;
+        object-fit:cover;
+    }
+    
+    .container{
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+
+    }
+    
+    .section__title{
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    .line::after{
+        content: "";
+        width: 60px;
+        height: 0px;
+        border: 0.5px solid rgb(8, 4, 4);
+        background-color: rgb(7, 4, 4);
+        position: absolute;
+        left: 41.5%
+    }
+    
+    .container > iframe{
+        width: 90%;
+        height: 40vh;
+    }
+    
+    .storefront02{
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        background-color: white;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+}
