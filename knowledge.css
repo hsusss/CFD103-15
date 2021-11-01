@@ -210,9 +210,10 @@
 }
 
 .text > p{
-    font-size: 13px;
+    font-size: 16px;
     margin-top: 20px;
     line-height: 25px;
+    letter-spacing: 2px;
 }
 
 .pic > img{
@@ -222,77 +223,82 @@
 
 .text_title01{
     position: relative;
+    font-size: 24px;
 }
 
 .text_title02{
     position: relative;
+    font-size: 24px;
 }
 
 .text_title03{
     position: relative;
+    font-size: 24px;
 }
 
 .text_title04{
     position: relative;
+    font-size: 24px;
 }
 
 .text_title05{
     position: relative;
+    font-size: 24px;
 }
 
 .text_title01::after{
     content: "";
-    width: 710px;
+    width: 685px;
     height: 0px;
     border: 0.5px solid rgb(189, 184, 184);
     background-color: rgb(192, 181, 181);
     position: absolute;
     top: 12px;
-    right: 10px;
+    right: 5px;
 }
 
 .text_title02::after{
     content: "";
-    width: 710px;
+    width: 685px;
     height: 0px;
     border: 0.5px solid rgb(189, 184, 184);
     background-color: rgb(192, 181, 181);
     position: absolute;
     top: 12px;
-    right: 10px;
+    right: 5px;
 }
 
 .text_title03::after{
     content: "";
-    width: 690px;
+    width: 660px;
     height: 0px;
     border: 0.5px solid rgb(189, 184, 184);
     background-color: rgb(192, 181, 181);
     position: absolute;
     top: 12px;
-    right: 10px;
+    right: 7px;
 }
 
 .text_title04::after{
     content: "";
-    width: 670px;
+    width: 635px;
     height: 0px;
     border: 0.5px solid rgb(189, 184, 184);
     background-color: rgb(192, 181, 181);
     position: absolute;
     top: 12px;
-    right: 10px;
+    right: 7px;
 }
 
 .text_title05::after{
     content: "";
-    width: 650px;
+    width: 610px;
     height: 0px;
     border: 0.5px solid rgb(189, 184, 184);
     background-color: rgb(192, 181, 181);
     position: absolute;
     top: 12px;
-    right: 10px;
+    right: 7px;
 }
 
 @media screen and (max-width:768px) {

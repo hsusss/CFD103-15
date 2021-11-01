@@ -234,7 +234,7 @@
         display: flex;
         list-style: none;
         margin-top: 6%;
-        
+        gap: 0;
     }
     
     .footer_list a {
@@ -243,7 +243,7 @@
         color: whitesmoke;
         font-size: 16px;
         display: block;
-        padding: 0 10px 0 0px;
+        padding: 0 5% 0 0;
         
     }
     
