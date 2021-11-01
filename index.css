@@ -771,7 +771,7 @@
         background-color: rgb(229, 232, 236);
         position:absolute;
         top: 120%;
-        left: 40%;
+        left: 35%;
     }
     
     #btnRight{
@@ -782,7 +782,7 @@
         background-color:rgb(229, 232, 236);
         position:absolute;
         top: 120%;
-        right: 40%;
+        right: 35%;
     }
     
     #btnLeft[disabled], #btnRight[disabled]{
